@@ -1,0 +1,15 @@
+<div *ngIf="recapFormation" class="card mb-3 container" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <div class="aside">
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <ul class="list-group" *ngFor="let training of recapFormation">
+          <li class="list-group-item">{{training.name}} - {{training.description}} - {{training.quantity}} - {{training.price}} </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
